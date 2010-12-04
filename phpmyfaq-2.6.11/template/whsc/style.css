@@ -110,3 +110,87 @@ a.rss:link, a.rss:visited { background: #ff6a00; color: #fff; font: 9px normal V
 #action { text-align: center; margin: 5px; }
 p#action img { vertical-align: middle; }
 #version, #copyright { margin-top: 1em; text-align: center; }
+
+/* WHSC theme changes
+------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5 { 
+	font-family: "Myriad Pro", "Lucida Sans Unicode", Arial, Helvetica, sans-serif; 
+	font-weight: normal; 
+	letter-spacing: -1px; 
+	margin-top: 0; 
+	padding-top: 0; 
+}
+
+div.clear { 
+	clear: both; 
+	height: 0px; 
+	overflow: hidden; 
+}
+
+.whsc_searchform {
+}
+
+.whsc_searchform fieldset { 
+	border: none; 
+	padding: 0; 
+	margin: 0; 
+	border-bottom: 1px solid #ccc; 
+}
+
+.whsc_searchform input[type=text], .whsc_searchform input[type=submit] { 
+	font-family: "Myriad Pro"; 
+	font-weight: normal !important; 
+	box-shadow: 1px 1px 2px #ccc;
+	-webkit-box-shadow: 1px 1px 2px #ccc; 
+	-moz-box-shadow: 1px 1px 2px #ccc; 
+	border: 1px solid #999; 
+	padding: 0.2em 0.4em; 
+	font-size: 1.5em; 
+}
+
+.whsc_searchform input[type=submit]:hover { 
+	cursor: pointer; 
+}
+
+.whsc_searchform .refine_label { 
+	float: left; 
+	height: 30px; 
+	line-height: 30px; 
+	margin-right: 0.4em; 
+	position: relative; 
+	top: -2px; 
+	font-size: 1.2em; 
+} 
+
+.whsc_searchform .refine_list { 
+	float: left; 
+}
+
+.whsc_searchform select { 
+	font-family: "Calibri", Arial, Helvetica, sans-serif; 
+	font-size: 1.2em; 
+}
+
+.whsc_maincontent { 
+	padding: 0 1em; 
+}
+
+.rightcolumn { 
+	border-left: 1px solid #ccc; 
+	padding-left: 1.5em; 
+}
+
+.leftcolumn { 
+	border-right: 1px solid #ccc;
+	padding-right: 1.5em; 
+	padding-top: 3px; 
+}
+
+a.rss, #topten h3 a, #latest h3 a { 
+	display: none !important; 
+}
+
+.whsc_maincontent h2 { 
+	font-size: 2.4em; 
+}

@@ -68,7 +68,7 @@
     </div>
 
     <div class="rightcolumn">
-        {rightBox}
+      	  {rightBox}
                 
             <div class="content">
                 <div id="stickyrecords">
@@ -83,23 +83,26 @@
     </div>
 
     <div class="main-content">
-        [globalSearchBox]
-        <form id="search" action="{writeSendAdress}" method="get">
-             <input type="text" name="search" id="searchfield" size="30" />
-             <input type="submit" name="submit" value="{searchBox}" />
-             <input type="hidden" name="searchcategory" value="{categoryId}" />
-             <input type="hidden" name="action" value="search" />
-         </form>
-        [/globalSearchBox]
-        [globalSuggestBox]
-        <form id="instantform" action="?action=instantresponse" method="post">
-        <input id="ajaxlanguage" name="ajaxlanguage" type="hidden" value="{ajaxlanguage}" />
-        <input class="inputfield" id="instantfield" type="text" name="search" value="" />
-        </form>
-        [/globalSuggestBox]
-
-    {writeContent}
-    
+		<div class="whsc_maincontent">
+			<div class="whsc_searchform">
+				[globalSearchBox]
+				<form id="search" action="{writeSendAdress}" method="get">
+					 <input type="text" name="search" id="searchfield" size="30" />
+					 <input type="submit" name="submit" value="{searchBox}" />
+					 <input type="hidden" name="searchcategory" value="{categoryId}" />
+					 <input type="hidden" name="action" value="search" />
+				 </form>
+				[/globalSearchBox]
+				[globalSuggestBox]
+				<form id="instantform" action="?action=instantresponse" method="post">
+				<input id="ajaxlanguage" name="ajaxlanguage" type="hidden" value="{ajaxlanguage}" />
+				<input class="inputfield" id="instantfield" type="text" name="search" value="" />
+				</form>
+				[/globalSuggestBox]
+			</div>
+		
+		    {writeContent}
+		</div>
     </div>
 </div>
 
